@@ -1,7 +1,7 @@
 # Sentiment Analysis (English and Deutsch)
 
 ## Description
-Sentiment analysis is an important natural language processing. The method analyzes texts in English or Deutsch to determine its polarity as positive, negative and neutral. For sentiment analysis of English text it uses 1. [SentiStrength](https://github.com/zhunhung/Python-SentiStrength), 2. [VADER](https://pypi.org/project/vaderSentiment/), 3. [TextBlob](https://textblob.readthedocs.io/en/dev/), and 4. [SentiWordNet](https://www.nltk.org/api/nltk.corpus.reader.sentiwordnet.html). While for Deutsch text analysis it uses 1. [SentiStrength_de](https://github.com/OFAI/SentiStrength_DE) 2. [GerVADER](https://github.com/KarstenAMF/GerVADER), and 3. [TextBlobDE](https://github.com/markuskiller/textblob-de)   
+Sentiment analysis is an important natural language processing. The method analyzes texts in English or Deutsch to determine its polarity as positive, negative and neutral. For sentiment analysis of English text it uses 1. [SentiStrength](https://github.com/zhunhung/Python-SentiStrength), 2. [VADER](https://pypi.org/project/vaderSentiment/), 3. [TextBlob](https://textblob.readthedocs.io/en/dev/), and 4. [SentiWordNet](https://www.nltk.org/api/nltk.corpus.reader.sentiwordnet.html). While for Deutsch text analysis it uses 1. [SentiStrength_de](https://github.com/OFAI/SentiStrength_DE) 2. [GerVADER](https://github.com/KarstenAMF/GerVADER), and 3. [TextBlobDE](https://github.com/markuskiller/textblob-de).  
 
 ## Use Cases
 Analyze sentiments of the social media posts, customer reviews, or other user content.
