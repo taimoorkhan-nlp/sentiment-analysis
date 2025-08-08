@@ -59,29 +59,33 @@ def get_sentiments_textblob(text, lang):
                         }
     return dict_senti_score
 
-def get_sentiments_sentiwordnet(text):
+def get_sentiments_sentiwordnet(text, lang):
+    if lang != 'en':
+        return {'msg' : 'language not supported'}
+    
     tokens = nltk.word_tokenize(text)
     postags = nltk.pos_tag(tokens)
     
+    pos_score = neg_score = 0    
     for postag in postags:
         wntag = ''
-        dict_senti_score = {"pos": 0, "neg": 0}
-        if postag[0].startswith('J'):
+
+        if postag[1].startswith('J'):
             wntag = wordnet.ADJ
-        elif postag[0].startswith('R'):
-            wntag = wordnet.ADV
-        elif postag[0].startswith('N'):
+        elif postag[1].startswith('R'):
+                wntag = wordnet.ADV
+        elif postag[1].startswith('N'):
             wntag = wordnet.NOUN
         else:
             continue
-        print(postags[1], wntag)
-        wordSynst = wordnet.synsets(postag[1], pos=wntag)
-        print(wordSynst)
-        if not wordSynst:
-            continue
-        else:
+        
+        wordSynst = wordnet.synsets(postag[0], pos=wntag)
+        
+        if len(wordSynst) > 0:
             sentiwn = sentiwordnet.senti_synset(wordSynst[0].name())
-            dict_senti_score["pos"] += sentiwn.pos_score()
-            dict_senti_score["neg"] += sentiwn.neg_score()
-    return dict_senti_score
+            
+            pos_score += sentiwn.pos_score()
+            neg_score += sentiwn.neg_score()
+    return {'pos' : pos_score, 'neg' : neg_score}
+
 

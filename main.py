@@ -4,14 +4,18 @@ import pandas as pd
 
 def sentiment_analysis(sentences, lang):
     results = {
-        'Text': [], 'SentiStrength' : [], 'VADER' : [], 'TextBlob' : [], 'SentiWordNet' : []
+        'Text': [], 'SentiStrength' : [], 'VADER' : [], 'TextBlob' : []
         }
+    if lang == 'en':
+        results['SentiWordNet'] = []
+            
     results['Text'] = sentences
     for sentence in sentences:
         results['SentiStrength'].append(get_sentiments_sentistrength(sentence, lang, mode='trinary')) #mode=dual/scale/binary/trinary
         results['VADER'].append(get_sentiments_vader(sentence, lang))
         results['TextBlob'].append(get_sentiments_textblob(sentence, lang))
-        results['SentiWordNet'].append(get_sentiments_sentiwordnet(sentence))
+        if lang == 'en':
+            results['SentiWordNet'].append(get_sentiments_sentiwordnet(sentence, lang))
     return results
 
 def main():
