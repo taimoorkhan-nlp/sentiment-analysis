@@ -1,0 +1,6 @@
+Text	SentiStrength	VADER	TextBlob	SentiWordNet
+Ich war begeistert von der Show â€“ einfach fantastisch!	{'pos': 2, 'neg': -1, 'neu': 1}	{'neg': 0.0, 'neu': 0.375, 'pos': 0.625, 'compound': 0.8748}	{'polarity': 1.0, 'subjectivity': 0.0}	{'pos': 0, 'neg': 0}
+Das Essen war ganz gut, aber nichts Besonderes.	{'pos': 1, 'neg': -1, 'neu': 0}	{'neg': 0.194, 'neu': 0.532, 'pos': 0.275, 'compound': 0.2302}	{'polarity': 1.0, 'subjectivity': 0.0}	{'pos': 0, 'neg': 0}
+Das Treffen begann um zehn Uhr morgens.	{'pos': 1, 'neg': -1, 'neu': 0}	{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}	{'polarity': 0.0, 'subjectivity': 0.0}	{'pos': 0, 'neg': 0}
+Ich war etwas enttÃ¤uscht von der PrÃ¤sentation.	{'pos': 1, 'neg': -1, 'neu': 0}	{'neg': 0.0, 'neu': 1.0, 'pos': 0.0, 'compound': 0.0}	{'polarity': 0.0, 'subjectivity': 0.0}	{'pos': 0, 'neg': 0}
+Das war eine absolute Katastrophe â€“ ich bin sehr unzufrieden!	{'pos': 2, 'neg': -1, 'neu': 1}	{'neg': 0.448, 'neu': 0.455, 'pos': 0.097, 'compound': -0.7495}	{'polarity': 0.7, 'subjectivity': 0.0}	{'pos': 0, 'neg': 0}
