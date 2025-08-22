@@ -1,14 +1,13 @@
-# Sentiment Analysis (English and Deutsch)
+# Sentiment Analysis (English and German)
 
 ## Description
-Sentiment analysis is an important natural language processing. The method analyzes texts in English or Deutsch to determine its polarity as positive, negative and neutral. For sentiment analysis of English text it uses 1. [SentiStrength](https://github.com/zhunhung/Python-SentiStrength), 2. [VADER](https://pypi.org/project/vaderSentiment/), 3. [TextBlob](https://textblob.readthedocs.io/en/dev/), and 4. [SentiWordNet](https://www.nltk.org/api/nltk.corpus.reader.sentiwordnet.html). While for Deutsch text analysis it uses 1. [SentiStrength_de](https://github.com/OFAI/SentiStrength_DE) 2. [GerVADER](https://github.com/KarstenAMF/GerVADER), and 3. [TextBlobDE](https://github.com/markuskiller/textblob-de).  
+Sentiment analysis is an important natural language processing. The method analyzes texts in English or German to determine its polarity as positive, negative or neutral. For sentiment analysis in English, the method uses 4 popular sentiment analysis tools that are 1. [SentiStrength](https://github.com/zhunhung/Python-SentiStrength), 2. [VADER](https://pypi.org/project/vaderSentiment/), 3. [TextBlob](https://textblob.readthedocs.io/en/dev/), and 4. [SentiWordNet](https://www.nltk.org/api/nltk.corpus.reader.sentiwordnet.html). SentiStrength, VADER and TextBlob uses a combination of lexicon and rule-based analysis while SentiWordNet relies on lexicons only. These tools are specifically optimized for social media based content i.e., shorter texts with emojis etc. For sentiment analysis in German, the German variants of 1. [SentiStrength_de](https://github.com/OFAI/SentiStrength_DE) 2. [GerVADER](https://github.com/KarstenAMF/GerVADER), and 3. [TextBlobDE](https://github.com/markuskiller/textblob-de) are used only.  
 
 ## Use Cases
-Analyze sentiments of the social media posts, customer reviews, or other user content.
+the mehtods can be used to analyze sentiments of textual content such as social media posts and customer reviews.
 
 ## Input Data
-
-The method reads input as text file. The sample data files for English and Deutsch are `data/input_text_en` and `data/input_text_de`.
+The method reads input as text file. The sample data files for English and German are `data/input_text_en` and `data/input_text_de`.
 
 | Text |
 |:----:|
@@ -40,7 +39,7 @@ Run the following command to setup with the virtual environment.
 
 ## How to Use
 
-Run the following command to perform sentiment analysis on English texts and Deutsch texts from the `data/` input files.
+Run the following command to perform sentiment analysis on English texts and German texts from the `data/` input files.
 
 `python main.py`
 
