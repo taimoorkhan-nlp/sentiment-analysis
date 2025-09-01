@@ -44,4 +44,4 @@ Run the following command to perform sentiment analysis on English texts and Ger
 `python main.py`
 
 ## Contact Details
-For queries, please contact <taimoor.khan@gesis.org>
+For any queries, please contact <taimoor.khan@gesis.org>
