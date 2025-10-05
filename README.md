@@ -33,9 +33,9 @@ The method runs on a small virtual machine provided by a cloud computing company
 
 ## Environment Setup
 
-Run the following command to setup with the virtual environment.
+Execute the following command with conda to setup the virtual environmnet.
 
-`pip install -r requirements.txt`
+`conda env create -f environment.yml`
 
 ## How to Use
 
