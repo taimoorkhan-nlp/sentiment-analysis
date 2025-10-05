@@ -26,7 +26,7 @@ echo
 
 # install required python packages
 python3 -m pip install jupyterlab-quarto
-python3 -m nltk.downloader punkt punkt_tab wordnet averaged_perceptron_tagger stopwords vader_lexicon
+python3 -m nltk.downloader punkt punkt_tab wordnet stopwords vader_lexicon
 
 echo
 echo Completed
