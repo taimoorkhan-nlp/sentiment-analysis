@@ -39,7 +39,7 @@ Execute the following command with conda to setup the virtual environmnet.
 
 ## How to Use
 
-Run the following command to perform sentiment analysis on English texts and German texts from the `data/` input files.
+Run the following command to perform sentiment analysis on English texts and German input texts in `data/input_text_en.txt` and `data/input_text_de.txt` files, respectively. The output is written into the files `data/output_sentiments_en.txt` and `data/output_sentiments_de.txt` 
 
 `python main.py`
 
