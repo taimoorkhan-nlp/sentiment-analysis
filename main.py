@@ -1,3 +1,4 @@
+import setup_nltk  
 from sentiments_analysis import (get_sentiments_sentistrength, get_sentiments_vader, 
                                  get_sentiments_textblob, get_sentiments_sentiwordnet)
 import pandas as pd
